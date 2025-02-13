@@ -1,0 +1,61 @@
+/* Sidebar Styles */
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    background-color: #343a40;
+    padding-top: 20px;
+    color: white;
+    overflow-x: hidden;
+}
+
+.sidenav h2 {
+    font-size: 20px;
+    text-align: center;
+    color: #f8f9fa;
+    margin-bottom: 20px;
+}
+
+.sidenav a, .dropdown-btn {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #adb5bd;
+    display: block;
+    border-radius: 4px;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+    background-color: #495057;
+    color: white;
+}
+
+.dropdown-container {
+    display: none;
+    padding-left: 15px;
+}
+
+.dropdown-btn.active {
+    background-color: #495057;
+    color: white;
+}
+
+/* Top Navigation Bar */
+.topnav {
+    margin-left: 250px;
+    padding: 10px;
+    background-color: #007bff;
+    text-align: right;
+}
+
+.topnav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.topnav a:hover {
+    background-color: #0056b3;
+}

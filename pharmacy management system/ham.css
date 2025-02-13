@@ -1,0 +1,53 @@
+.hamburger {
+           
+    font-size: 24px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: red;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.sidenav {
+    transition: transform 0.3s ease;
+}
+
+.sidenav.hidden {
+    transform: translateX(-250px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidenav {
+        width: 250px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        background-color: red;
+        overflow-x: hidden;
+        z-index: 999;
+        padding-top: 60px;
+        transform: translateX(-250px); /* Hidden by default */
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .sidenav.active {
+        transform: translateX(0);
+    }
+}
