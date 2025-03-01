@@ -1,0 +1,152 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Ensures that main content stays in column */
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+/* Sidebar styles */
+.sidenav {
+    height: 100%;
+    width: 251px;
+    background-color: #225bb9;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    padding-right: 20px;
+    box-shadow: 2px 0 5px rgba(42, 60, 198, 0.1);
+    transition: all 0.3s ease;
+}
+
+.sidenav h2 {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.sidenav a {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.sidenav a:hover {
+    background-color: #225bb9;
+}
+
+.sidenav .dropdown-btn {
+    background-color: #225bb9;
+    color: white;
+    border: none;
+    width: 80%;
+    padding: 18px;
+    text-align: left;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidenav .dropdown-btn:hover {
+    background-color: #3f82ef;
+    color: white;  
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.07);
+}
+
+.sidenav .dropdown-container {
+    display: none;
+    padding-left: 30px;
+    background-color: #3f82ef;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.07);
+}
+
+.sidenav .dropdown-container a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.sidenav .dropdown-container a:hover {
+    background-color: #0f4bab;
+    border-radius: 5px;
+    transform: scale(1.07);
+}
+
+/* Center the logout button */
+.logout-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100px; 
+    margin-top: auto;
+}
+
+/* Style the logout button */
+.logout {
+    line-height: 1.5;
+    margin: 10px;
+    background-color: #f44336; 
+    color: white;              
+    padding: 10px 20px;        
+    text-align: center;        
+    text-decoration: none;     
+    font-size: 18px;           
+    cursor: pointer;           
+    border-radius: 9px;        
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sidenav .logout:hover {
+    background-color: #f70303;
+    transform: scale(1.2);     
+    color: whitesmoke;
+}
+
+/* Main content section */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+    transition: all 0.3s ease;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    height: 100px;  
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sidenav {
+        width: 200px;
+    }
+    .topnav {
+        left: 200px;
+    }
+    .main-content {
+        margin-left: 200px;
+        width: calc(100% - 200px);
+    }
+}

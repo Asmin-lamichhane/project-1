@@ -1,0 +1,88 @@
+/* Table styles for the sales invoice */
+#table1 {
+    width: 65% !important; /* Reduced width */
+    margin: 30px auto !important;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    padding-left: 150px !important; /* Increased left padding */
+    padding-right: 30px 
+}
+
+#table1 th, #table1 td {
+    padding: 15px 30px !important;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#table1 th {
+    background-color: #225bb9;
+    color: white;
+    font-weight: bold;
+}
+
+#table1 tr:hover {
+    background-color: #f1f1f1;
+}
+
+#table1 tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Button container styles */
+.button-container {
+    display: block !important; /* Ensures it's outside flexbox context */
+    text-align: center !important;
+    margin-top: 30px !important; /* Adds spacing from the table */
+    width: 100% !important;
+    clear: both !important; /* Prevents floating issues */
+}
+
+/* Button styles */
+.button1 {
+    display: inline-block;
+    padding: 12px 24px !important;
+    font-size: 16px !important;
+    color: white !important;
+    background-color: #225bb9 !important;
+    border: none !important;
+    border-radius: 5px !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+    transition: background-color 0.3s ease, transform 0.3s ease !important;
+}
+
+.button1:hover {
+    background-color: #3f82ef !important;
+    transform: scale(1.05) !important;
+}
+
+/* Heading styles for the sales page */
+.head h2 {
+    font-size: 28px !important;
+    color: #225bb9;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+}
+
+/* Responsive design for the table */
+@media (max-width: 768px) {
+    #table1 {
+        width: 85% !important;
+        padding-left: 15px !important;
+    }
+
+    #table1 th, #table1 td {
+        padding: 8px 12px !important;
+    }
+
+    .button1 {
+        padding: 10px 20px !important;
+        font-size: 14px !important;
+    }
+
+    .head h2 {
+        font-size: 24px !important;
+    }
+}

@@ -1,0 +1,118 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+.header {
+    
+    text-align: left;
+    color: rgb(13, 97, 186);
+    padding: 20px 0;
+    border: none;
+    
+    
+}
+
+.header h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+/* Body Background and Flex Alignment */
+body {
+    background-color: #f2f2f2;
+    height: 100vh;  /* Ensure body covers the entire height */
+    margin: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Full-Screen Video Background */
+.back-video {
+    position: absolute;
+    opacity: 65%;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  /* Ensures the video fills the screen without distortion */
+    z-index: -1;  /* Places the video behind content */
+}
+
+/* Container Styles */
+.container {
+    background-color: white;
+    width: 350px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;  /* Ensure the container stays on top of the video */
+}
+
+/* Login Form */
+#div_login {
+    text-align: center;
+}
+
+#div_login h1 {
+    font-size: 24px;
+    color: #004d99;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+/* Textbox Styles */
+.textbox {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.textbox:focus {
+    border-color: #004d99;
+    outline: none;
+}
+
+/* Buttons */
+#submit {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #004d99;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #003366;
+}
+
+/* Error Message */
+p {
+    font-size: 14px;
+    color: red;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 400px) {
+    .container {
+        width: 90%;
+    }
+}
